@@ -1,0 +1,44 @@
+.leader-in-vr {
+  margin: 100px 0;
+	position: relative;
+
+	.section-img {
+		width: 100%;
+		height: 18em;
+		background-image: url('../images/mobile/image-interactive.jpg');
+		background-position: center;
+		background-size: cover;		
+		@include breakpoints-up(large) {
+			background-image: url('../images/desktop/image-interactive.jpg');
+			width: 50vw;
+			height: 30em;
+		}
+	}
+	.section-text {
+		margin-top: 50px;
+		text-align: center;
+		@include breakpoints-up(large) {
+			text-align: start;
+			width: 40em;
+			padding-top: 80px;
+			padding-left: 80px;
+			position: absolute;
+			background-color: $White;
+			top: 0;
+			right: 0;
+			margin-top: 12em;
+		}
+		.title {
+			font-family: $josfSans;
+			font-size: 2.5rem;
+			font-weight: 100;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+		}
+		p {
+			font-size: 18px;
+			font-family: $alata;
+			color: $DarkGray;
+		}
+	}
+}

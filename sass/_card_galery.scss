@@ -1,0 +1,129 @@
+.card-galery {
+	margin-bottom: 100px;
+	text-align: center;
+
+	.text-button {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 50px;
+		@include breakpoints-down(medium) {
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+	.title {		
+		font-family: $josfSans;
+		font-size: 2.5rem;
+		font-weight: 100;
+		text-transform: uppercase;
+	}
+	.section-cards {
+		@include breakpoints-up(large) {
+			display: grid;
+			grid-template-columns: auto auto auto auto;
+			justify-content: space-between;
+			width: 100%;
+		}
+		.section-card {
+			position: relative;
+			width: 100%;
+			height: 9em;
+			margin-bottom: 20px;
+			background-position: center;
+			background-size: cover;
+			color: $White;
+
+			@include breakpoints-up(large) {
+				width: 15em;
+				height: 35em;
+			}
+
+			&:hover {
+				opacity: .5;
+				cursor: pointer;
+				color: $Black;
+				font-weight: 300;
+			}
+
+			.card-text {
+				position: absolute;
+				bottom: 20px;
+				left: 20px;
+				font-family: $josfSans;
+				font-weight: 100;
+				text-transform: uppercase;
+				font-size: 1rem;
+				text-align: left;
+			}
+		}
+		.card-1 {
+			background-image: url('../images/mobile/image-deep-earth.jpg');
+			@include breakpoints-up(large) {
+				background-image: url('../images/desktop/image-deep-earth.jpg');
+			}
+		}
+		.card-2 {
+			background-image: url('../images/mobile/image-night-arcade.jpg');
+			@include breakpoints-up(large) {
+				background-image: url('../images/desktop/image-night-arcade.jpg');
+			}
+		}
+		.card-3 {
+			background-image: url('../images/mobile/image-soccer-team.jpg');
+			@include breakpoints-up(large) {
+				background-image: url('../images/desktop/image-soccer-team.jpg');
+			}
+		}
+		.card-4 {
+			background-image: url('../images/mobile/image-grid.jpg');
+			@include breakpoints-up(large) {
+				background-image: url('../images/desktop/image-grid.jpg');
+			}
+		}
+		.card-5 {
+			background-image: url('../images/mobile/image-from-above.jpg');
+			@include breakpoints-up(large) {
+				background-image: url('../images/desktop/image-from-above.jpg');
+			}
+		}
+		.card-6 {
+			background-image: url('../images/mobile/image-pocket-borealis.jpg');
+			@include breakpoints-up(large) {
+				background-image: url('../images/desktop/image-pocket-borealis.jpg');
+			}
+		}
+		.card-7 {
+			background-image: url('../images/mobile/image-curiosity.jpg');
+			@include breakpoints-up(large) {
+				background-image: url('../images/desktop/image-curiosity.jpg');
+			}
+		}
+		.card-8 {
+			background-image: url('../images/mobile/image-fisheye.jpg');
+			@include breakpoints-up(large) {
+				background-image: url('../images/desktop/image-fisheye.jpg');
+			}
+		}
+	}
+
+	.btn {
+		border: 1px solid $Black;
+		background-color: $White;
+		color: $Black;
+		font-family: $josfSans;
+		font-weight: 300;
+		font-size: 1rem;
+		letter-spacing: 3px;
+		padding: 15px 25px;
+		&:hover {
+			cursor: pointer;
+			background-color: $Black;
+			color: $White;
+		}
+		@include breakpoints-down(medium) {
+			margin-top: 30px;
+		}
+	}
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Loopstudios landing page</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/main.css">
+
+</head>
+<body>
+  <header id="header">
+    <div class="container">
+      <nav id="nav">
+        <div class="nav-logo"><img src="./images/logo.svg" alt="logo"></div>
+        <div class="nav-links hide-for-mobile">
+          <ul>
+            <li class="nav-link"><a href="#" class="link">About</a></li>
+            <li class="nav-link"><a href="#" class="link">Careers</a></li>
+            <li class="nav-link"><a href="#" class="link">Events</a></li>
+            <li class="nav-link"><a href="#" class="link">Products</a></li>
+            <li class="nav-link"><a href="#" class="link">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-hamburger hide-for-desktop" onclick="openSlider()"><img src="./images/icon-hamburger.svg" alt="hamburger"></div>
+
+        <div class="nav-slider hide-for-desktop" id="nav-slider">
+          <div class="slider-top">
+            <div class="slider-logo"><img src="./images/logo.svg" alt="logo"></div>
+            <div class="slider-close" onclick="closeSlider()">
+              <img src="./images/icon-close.svg" alt="close-button" class="close">
+            </div>
+          </div>
+          <div class="slider-links">
+            <ul>
+              <li class="slider-link"><a href="#" class="link">About</a></li>
+              <li class="slider-link"><a href="#" class="link">Careers</a></li>
+              <li class="slider-link"><a href="#" class="link">Events</a></li>
+              <li class="slider-link"><a href="#" class="link">Products</a></li>
+              <li class="slider-link"><a href="#" class="link">Support</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header-text">
+        <h1>Immersive</h1>
+        <h1>experiences</h1>
+        <h1>that deliver</h1>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+
+      <section class="leader-in-vr">
+        <div class="section-img"></div>
+        <div class="section-text">
+          <h1 class="title">
+            The leader in interactive VR
+          </h1>
+          <p>
+            Founded in 2011, Loopstudios has been producing world-class virtual reality 
+            projects for some of the best companies around the globe. Our award-winning 
+            creations have transformed businesses through digital experiences that bind 
+            to their brand.
+          </p>
+        </div>
+      </section>
+
+      <section class="card-galery">
+        <div class="text-button">
+          <h1 class="title">OUR CREATIONS</h1>
+          <a href="#"><button class="btn hide-for-mobile">SEE ALL</button></a>
+        </div>
+        <div class="section-cards"> 
+          <div class="section-card card-1">
+            <div class="card-img"></div>
+            <div class="card-text">
+              <h1>Deep</h1>
+              <h1>Earth</h1>
+            </div>
+          </div>
+
+          <div class="section-card card-2">
+            <div class="card-img"></div>
+            <div class="card-text">
+              <h1>Night</h1>
+              <h1>Arcade</h1>
+            </div>
+          </div>
+
+          <div class="section-card card-3">
+            <div class="card-img"></div>
+            <div class="card-text">
+              <h1>Soccer</h1>
+              <h1>Team VR</h1>
+            </div>
+          </div>
+
+          <div class="section-card card-4">
+            <div class="card-img"></div>
+            <div class="card-text">
+              <h1>The</h1>
+              <h1>Grid</h1>
+            </div>
+          </div>
+
+          <div class="section-card card-5">
+            <div class="card-img"></div>
+            <div class="card-text">
+              <h1>From Up</h1>
+              <h1>Above VR</h1>
+            </div>
+          </div>
+
+          <div class="section-card card-6">
+            <div class="card-img"></div>
+            <div class="card-text">
+              <h1>Pocket</h1>
+              <h1>Borealis</h1>
+            </div>
+          </div>
+
+          <div class="section-card card-7">
+            <div class="card-img"></div>
+            <div class="card-text">
+              <h1>The</h1>
+              <h1>Curiosity</h1>
+            </div>
+          </div>
+
+          <div class="section-card card-8">
+            <div class="card-img"></div>
+            <div class="card-text">
+              <h1>Make It</h1>
+              <h1>Fish Eye</h1>
+            </div>
+          </div>
+        </div>
+        <a href="#"><button class="btn hide-for-desktop">SEE ALL</button></a>
+      </section>
+      
+    </div>
+  </main>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="#" class="logo"><img src="./images/logo.svg" alt="logo"></a>
+        <div class="links">
+          <ul>
+            <li class="footer-link"><a href="#" class="link">About</a></li>
+            <li class="footer-link"><a href="#" class="link">Careers</a></li>
+            <li class="footer-link"><a href="#" class="link">Events</a></li>
+            <li class="footer-link"><a href="#" class="link">Products</a></li>
+            <li class="footer-link"><a href="#" class="link">Support</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="icons">
+        <div class="social-medias">
+          <a href="#" class="social-media"><img src="./images/icon-facebook.svg" alt="" srcset=""></a>
+          <a href="#" class="social-media"><img src="./images/icon-twitter.svg" alt="" srcset=""></a>
+          <a href="#" class="social-media"><img src="./images/icon-pinterest.svg" alt="" srcset=""></a>
+          <a href="#" class="social-media"><img src="./images/icon-instagram.svg" alt="" srcset=""></a>
+        </div>
+
+        <p class="copyright">
+          © 2021 Loopstudios. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
